@@ -1,0 +1,506 @@
+body {
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('../img/image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center  ;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Horizontally center the container */
+    align-items: center; /* Vertically center the container */
+    height: 60vh; /* Adjust the height as per your requirement */
+    background-color: #ffffff;
+    opacity: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150vh;
+    max-width: 90%;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+.box{
+    background-color: #252525; /* Example background color */
+    width: 95%; /* Adjust the width of the box */
+     height: 90%;
+    display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontally center the box content */
+  justify-content: center; /* Vertically center the box content */
+  text-align: center;
+  border-radius: 1.5%; /* Center align the text content */
+}
+
+.box .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the form elements */
+    align-items: center; /* Horizontally center the form elements */
+  }
+
+.box .row {
+    text-align: center; /* Center align the content */
+  }
+.row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; /* Horizontally center the form */
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.col {
+    display: flex;
+    justify-content: center; /* Horizontally center the form */
+    align-items: center; /* Vertically center the form */
+    flex-direction: column; /* Stack the form elements vertically */
+}
+
+h1 {
+    font-family: fieldwork-1, sans-serif;
+    font-weight: 950;
+    font-size: 50px;
+    line-height: 0.9;
+    word-wrap: break-word;
+    color: #ffffff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-self: center;
+    justify-self: center;
+
+}
+
+
+h3 {
+    font-family: fieldwork-1, sans-serif;
+    color: #ffffff;
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    background-color: #3971A9;
+    color: #ffffff;
+    padding: 2px 5px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    box-sizing: border-box;
+    border-radius: 3%;
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serifx;
+margin-bottom: 5%;
+}
+
+input[type="submit"] {
+    background-color: #3971A9;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 3%;
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serifx;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #252525;
+}
+
+/* Style the browse button for modern browsers */
+input[type="file"]::file-selector-button {
+    background-color:#252525;
+    color: #ffffff;
+    padding: 2px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3%;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serifx;
+}
+input[type='file']:hover{
+    color: #252525;
+    background-color: #ffffff;
+}
+
+/* Style the browse button for older versions of WebKit-based browsers */
+input[type="file"]::-webkit-file-upload-button {
+    background-color: #252525;
+    color: #ffffff;
+    padding: 2px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3%;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serifx;
+}
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+.container{
+    opacity: 90%;
+}
+.box {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+form {
+    width: 90%; /* Adjust the width of the form */
+  }
+
+  input[type="file"],
+  input[type="submit"] {
+    width: 100%; /* Adjust the width of the inputs */
+    font-size: 2em; /* Increase the font size of the inputs */
+    margin: 10px;
+    padding: 20px;
+  }
+h1{
+    font-size: 55px;
+}
+h3{
+    font-size: 40px;
+}
+input[type="file"]::file-selector-button {
+    background-color:#252525;
+    padding: 5px;
+    font-size: 30px;
+}
+/* Style the browse button for older versions of WebKit-based browsers */
+input[type="file"]::-webkit-file-upload-button {
+    background-color: #3971A9;
+    padding: 5px;
+    font-size: 40px;
+}
+
+input[type='file']:hover{
+    background-color: #252525;
+    color: #ffffff;
+}
+input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #252525;
+}}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+
+.container{
+    opacity: 90%;
+}
+.box {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+form {
+    width: 90%; /* Adjust the width of the form */
+  }
+
+  input[type="file"],
+  input[type="submit"] {
+    width: 100%; /* Adjust the width of the inputs */
+    font-size: 2em; /* Increase the font size of the inputs */
+    margin: 10px;
+    padding: 20px;
+  }
+h1{
+    font-size: 55px;
+}
+h3{
+    font-size: 40px;
+}
+input[type="file"]::file-selector-button {
+    background-color:#252525;
+    padding: 5px;
+    font-size: 30px;
+}
+/* Style the browse button for older versions of WebKit-based browsers */
+input[type="file"]::-webkit-file-upload-button {
+    background-color: #3971A9;
+    padding: 5px;
+    font-size: 40px;
+}
+
+input[type='file']:hover{
+    background-color: #252525;
+    color: #ffffff;
+}
+input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #252525;
+}}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+.container{
+    opacity: 90%;
+}
+.box {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+form {
+    width: 90%; /* Adjust the width of the form */
+  }
+
+  input[type="file"],
+  input[type="submit"] {
+    width: 100%; /* Adjust the width of the inputs */
+    font-size: 2em; /* Increase the font size of the inputs */
+    margin: 10px;
+    padding: 20px;
+  }
+h1{
+    font-size: 55px;
+}
+h3{
+    font-size: 40px;
+}
+input[type="file"]::file-selector-button {
+    background-color:#252525;
+    padding: 5px;
+    font-size: 30px;
+}
+/* Style the browse button for older versions of WebKit-based browsers */
+input[type="file"]::-webkit-file-upload-button {
+    background-color: #3971A9;
+    padding: 5px;
+    font-size: 40px;
+}
+
+
+
+input[type='file']:hover{
+    background-color: #252525;
+    color: #ffffff;
+}
+input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #252525;
+}}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+.container{
+    opacity: 90%;
+}
+.box {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+form {
+    width: 90%; /* Adjust the width of the form */
+  }
+
+  input[type="file"],
+  input[type="submit"] {
+    width: 100%; /* Adjust the width of the inputs */
+    font-size: 2em; /* Increase the font size of the inputs */
+    margin: 10px;
+    padding: 20px;
+  }
+h1{
+    font-size: 55px;
+}
+h3{
+    font-size: 40px;
+}
+input[type="file"]::file-selector-button {
+    background-color:#252525;
+    padding: 5px;
+    font-size: 30px;
+}
+/* Style the browse button for older versions of WebKit-based browsers */
+input[type="file"]::-webkit-file-upload-button {
+    background-color: #3971A9;
+    padding: 5px;
+    font-size: 40px;
+}
+
+input[type='file']:hover{
+    background-color: #252525;
+    color: #ffffff;
+}
+input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #252525;
+}}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+.container{
+    opacity: 90%;
+}
+.box {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+form {
+    width: 90%; /* Adjust the width of the form */
+  }
+
+  input[type="file"],
+  input[type="submit"] {
+    width: 100%; /* Adjust the width of the inputs */
+    font-size: 2em; /* Increase the font size of the inputs */
+    margin: 10px;
+    padding: 20px;
+  }
+h1{
+    font-size: 55px;
+}
+h3{
+    font-size: 40px;
+}
+input[type="file"]::file-selector-button {
+    background-color:#252525;
+    padding: 5px;
+    font-size: 30px;
+}
+/* Style the browse button for older versions of WebKit-based browsers */
+input[type="file"]::-webkit-file-upload-button {
+    background-color: #3971A9;
+    padding: 5px;
+    font-size: 40px;
+}
+
+input[type='file']:hover{
+    background-color: #252525;
+    color: #ffffff;
+}
+input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #252525;
+}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+.container{
+    opacity: 80%;
+}
+.box {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+form {
+    width: 90%; /* Adjust the width of the form */
+  }
+
+  input[type="file"],
+  input[type="submit"] {
+    width: 100%; /* Adjust the width of the inputs */
+    font-size: 2em; /* Increase the font size of the inputs */
+    margin: 10px;
+    padding: 20px;
+  }
+h1{
+    font-size: 55px;
+}
+h3{
+    font-size: 40px;
+}
+input[type="file"]::file-selector-button {
+    background-color:#252525;
+    padding: 5px;
+    font-size: 30px;
+}
+/* Style the browse button for older versions of WebKit-based browsers */
+input[type="file"]::-webkit-file-upload-button {
+    background-color: #3971A9;
+    padding: 5px;
+    font-size: 40px;
+}
+
+input[type='file']:hover{
+    background-color: #252525;
+    color: #ffffff;
+}
+input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #252525;
+}
+}
+
+

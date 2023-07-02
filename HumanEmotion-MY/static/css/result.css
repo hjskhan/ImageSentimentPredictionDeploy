@@ -1,0 +1,334 @@
+body {
+  background-color: #252525;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url('../img/image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: #ffffff;
+  opacity: 0.9;
+  padding: 10px;
+  border-radius: 8px;
+  width: 150vh;
+  max-width: 90%;
+  margin: 0 10px;
+  box-sizing: border-box;
+}
+
+.box {
+  background-color: #252525;
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 1.5%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: fieldwork-1, sans-serif;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-family: fieldwork-1, sans-serif;
+  font-weight: 950;
+  font-size: 50px;
+  line-height: 0.9;
+  word-wrap: break-word;
+  color: #ffffff;
+  margin-top: 5px;
+}
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3971A9;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #ffffff;
+  color: #252525;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+.container{
+  opacity: 90%;
+}
+.box {
+width: 95%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+h1{
+  font-size: 80px;
+  font-weight: 800;
+}
+.col{
+  font-size: 2.3rem;
+}
+.back-button{
+  margin-top: 10rem;
+  padding: 30px 40px;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+}
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (max-width : 321px) {
+/* Styles */
+/* .container{
+  opacity: 90%;
+}
+.box {
+width: 95%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+h1{
+  font-size: 80px;
+  font-weight: 800;
+}
+.col{
+  font-size: 2.3rem;
+}
+.back-button{
+  margin-top: 10rem;
+  padding: 30px 40px;
+  font-size: 2.2rem;
+  cursor: pointer;
+} */
+}
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+.container{
+  opacity: 90%;
+}
+.box {
+width: 95%;
+/* height: 91%; */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+h1{
+  font-size: 80px;
+  font-weight: 800;
+}
+.col{
+  font-size: 2.3rem;
+}
+.back-button{
+  margin-top: 10rem;
+  padding: 30px 40px;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 360px) {
+/* .container{
+    opacity: 90%;
+  }
+  .box {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+  h1{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .col{
+    font-size: 1rem;
+  }
+  .back-button{
+    margin-top: 1rem;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+  } */
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+.container{
+  opacity: 90%;
+}
+.box {
+width: 95%;
+/* height: 91%; */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+h1{
+  font-size: 60px;
+  font-weight: 700;
+}
+.col{
+  font-size: 1.8rem;
+}
+.back-button{
+  margin-top: 5rem;
+  padding: 20px 30px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+/* .container{
+  opacity: 90%;
+}
+.box {
+width: 95%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+h1{
+  font-size: 60px;
+  font-weight: 800;
+}
+.col{
+  font-size: 2rem;
+}
+.back-button{
+  margin-top: 10rem;
+  padding: 20px 30px;
+  font-size: 1.8rem;
+  cursor: pointer;
+} */
+}
+/* iPad */
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (device-width: 768px) and (device-height: 1024px) and (min-device-pixel-ratio: 1.5) {
+        .container{
+          opacity: 90%;
+        }
+        .box {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        }
+        h1{
+          font-size: 40px;
+          font-weight: 700;
+        }
+        .col{
+          font-size: 1.8rem;
+        }
+        .back-button{
+          margin-top: 5rem;
+          padding: 10px 20px;
+          font-size: 1.4rem;
+          cursor: pointer;
+        }
+       }
+
+/* CSS for Samsung Galaxy S10 */
+@media only screen and (device-width: 360px) and (device-height: 760px) and (-webkit-min-device-pixel-ratio: 3),
+       only screen and (device-width: 360px) and (device-height: 760px) and (min-device-pixel-ratio: 3) {
+  /* CSS styles specific to Samsung Galaxy S10 */
+  .container{
+    opacity: 90%;
+  }
+  .box {
+  width: 95%;
+  /* height: 91%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+  h1{
+    font-size: 80px;
+    font-weight: 800;
+  }
+  .col{
+    font-size: 2.3rem;
+  }
+  .back-button{
+    margin-top: 10rem;
+    padding: 30px 40px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
