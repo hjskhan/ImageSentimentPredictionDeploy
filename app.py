@@ -10,7 +10,7 @@ import tempfile
 
 app = Flask(__name__)
 
-model = load_model('models/model_4.h5')
+model = load_model('artifacts\models\model_4.h5')
 model.compile(loss='binary_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
 
 @app.route('/')
